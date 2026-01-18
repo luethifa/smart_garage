@@ -109,9 +109,7 @@ GoRouter appRouter(Ref ref) {
 
       final correct = LocalizedRoutes.getPath(key, locale);
 
-      // Se la path corrente non inizia con quella corretta
       if (!state.uri.path.startsWith(correct)) {
-        // Trova eventuale "suffix" (es. /123)
         final index = state.uri.path.indexOf('/', correct.length);
         final suffix = index != -1 ? state.uri.path.substring(index) : '';
 
