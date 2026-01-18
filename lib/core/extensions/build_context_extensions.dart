@@ -25,4 +25,28 @@ extension LocalizedNavigation on BuildContext {
 
     GoRouter.of(this).go(path);
   }
+
+  void goLocalizedRef(Ref ref, String routeKey, {Map<String, String>? params}) {
+    final locale = ref.read(localeControllerProvider).languageCode;
+
+    var path = LocalizedRoutes.getPath(routeKey, locale);
+
+    params?.forEach((k, v) {
+      path = path.replaceAll(':$k', v);
+    });
+
+    GoRouter.of(this).go(path);
+  }
+
+  void pushLocalized(Ref ref, String routeKey, {Map<String, String>? params}) {
+    final locale = ref.read(localeControllerProvider).languageCode;
+
+    var path = LocalizedRoutes.getPath(routeKey, locale);
+
+    params?.forEach((k, v) {
+      path = path.replaceAll(':$k', v);
+    });
+
+    GoRouter.of(this).push(path);
+  }
 }

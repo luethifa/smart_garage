@@ -54,10 +54,11 @@ GoRouter appRouter(Ref ref) {
                     debugPrint('$v');
                     switch (v) {
                       case PopupMenuItems.settings:
-                        context.push('/settings');
+                        context.pushLocalized(ref, 'settings');
+
                         break;
                       case PopupMenuItems.logout:
-                        context.push('/');
+                        context.goLocalizedRef(ref, 'home');
                         break;
                     }
                   },
