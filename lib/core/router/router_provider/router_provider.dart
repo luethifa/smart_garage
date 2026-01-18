@@ -8,6 +8,7 @@ import 'package:smart_garage/core/router/localized_routes.dart';
 import 'package:smart_garage/features/courtesy_cars/presentation/screens/courtesy_cars_screen.dart';
 import 'package:smart_garage/features/home/presentation/screens/home_screen.dart';
 import 'package:smart_garage/features/settings/presentation/screens/settings_screen.dart';
+import 'package:smart_garage/shared/screens/not_found_screen.dart';
 import 'package:smart_garage/shared/widgets/top_nav_bar.dart';
 
 part 'router_provider.g.dart';
@@ -28,6 +29,8 @@ GoRouter appRouter(Ref ref) {
   return GoRouter(
     initialLocation: '/',
     refreshListenable: refreshNotifier,
+    errorBuilder: (context, state) =>
+        NotFoundScreen(path: state.uri.toString()),
     routes: [
       ShellRoute(
         builder: (context, state, child) {
