@@ -101,6 +101,30 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
   ];
+
+  /// Home menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get menuHome;
+
+  /// Courtesy cars menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Courtesy cars'**
+  String get menuCourtesyCars;
+
+  /// Settings menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get menuSettings;
+
+  /// Logout menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Logout'**
+  String get menuLogout;
 }
 
 class _AppLocalizationsDelegate

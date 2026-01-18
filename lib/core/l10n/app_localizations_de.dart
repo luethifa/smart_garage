@@ -7,4 +7,16 @@ import 'app_localizations.dart';
 /// The translations for German (`de`).
 class AppLocalizationsDe extends AppLocalizations {
   AppLocalizationsDe([String locale = 'de']) : super(locale);
+
+  @override
+  String get menuHome => 'Home';
+
+  @override
+  String get menuCourtesyCars => 'Courtesy cars';
+
+  @override
+  String get menuSettings => 'Settings';
+
+  @override
+  String get menuLogout => 'Logout';
 }

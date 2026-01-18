@@ -1,0 +1,19 @@
+{
+  "@@locale": "it",
+  "menuHome": "Home",
+  "@menuHome": {
+    "description": "Home menu item"
+  },
+  "menuCourtesyCars": "Auto di cortesia",
+  "@menuCourtesyCars": {
+    "description": "Courtesy cars menu item"
+  },
+  "menuSettings": "Impostazioni",
+  "@menuSettings": {
+    "description": "Settings menu item"
+  },
+  "menuLogout": "Disconetti",
+  "@menuLogout": {
+    "description": "Logout menu item"
+  }
+}

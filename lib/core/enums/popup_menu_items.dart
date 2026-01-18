@@ -1,0 +1,1 @@
+enum PopupMenuItems { settings, logout }

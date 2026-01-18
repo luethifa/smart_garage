@@ -7,4 +7,16 @@ import 'app_localizations.dart';
 /// The translations for Italian (`it`).
 class AppLocalizationsIt extends AppLocalizations {
   AppLocalizationsIt([String locale = 'it']) : super(locale);
+
+  @override
+  String get menuHome => 'Home';
+
+  @override
+  String get menuCourtesyCars => 'Auto di cortesia';
+
+  @override
+  String get menuSettings => 'Impostazioni';
+
+  @override
+  String get menuLogout => 'Disconetti';
 }

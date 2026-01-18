@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:smart_garage/core/extensions/build_context_extensions.dart';
 
 class TopNavBar extends StatelessWidget {
   const TopNavBar({super.key});
@@ -12,19 +13,14 @@ class TopNavBar extends StatelessWidget {
       children: [
         TextButton.icon(
           onPressed: () => context.go('/'),
-          label: Text('Home'),
+          label: Text(context.l10n.menuHome),
           icon: Icon(Icons.home_rounded),
         ),
         TextButton.icon(
           onPressed: () => context.go('/courtesy-cars'),
-          label: Text('Courtesy cars'),
+          label: Text(context.l10n.menuCourtesyCars),
           icon: Icon(Icons.car_rental_rounded),
         ),
-        // TextButton.icon(
-        //   onPressed: () => context.go('/calendar'),
-        //   label: Text('Calendar'),
-        //   icon: Icon(Icons.calendar_month_rounded),
-        // ),
       ],
     );
   }

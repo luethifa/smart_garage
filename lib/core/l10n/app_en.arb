@@ -1,0 +1,19 @@
+{
+  "@@locale": "en",
+  "menuHome": "Home",
+  "@menuHome": {
+    "description": "Home menu item"
+  },
+  "menuCourtesyCars": "Courtesy cars",
+  "@menuCourtesyCars": {
+    "description": "Courtesy cars menu item"
+  },
+  "menuSettings": "Settings",
+  "@menuSettings": {
+    "description": "Settings menu item"
+  },
+  "menuLogout": "Logout",
+  "@menuLogout": {
+    "description": "Logout menu item"
+  }
+}
